@@ -1,0 +1,139 @@
+
+/* Set the background color of body to tan */
+body {
+ background-image: linear-gradient(to right,rgb(10, 226, 255),rgb(219, 1, 248));
+  padding: 0px;
+}
+
+#sidebar {
+  
+  height: 100vh;
+}
+
+#sidemenu{
+  height: 100vh;
+  margin-left: 40px;
+ 
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 850px) {
+  body {
+    background-color: blue;
+  }
+  #sidebar {
+    width: 60px;
+  }
+  #sidemenu{
+    display: none;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 300px) {
+  body {
+    background-color: olive;
+  }
+  #sidebar {
+    width: 60px;
+  }
+
+  #sidemenu{
+    display: none;
+  }
+  
+}
+
+li{
+  list-style: none;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 4px;
+  font-size:20px;
+ }
+
+
+ ul li:hover {
+  color: rgb(8, 8, 8);
+  
+  background-color: rgb(101, 230, 240);
+  border-radius: 10px;
+  
+  }
+
+ #topbar {
+   border-color: 2px solid black;
+ }
+
+ .form-control {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+
+  border-radius: 50px;
+}
+
+#addproduct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#products{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4px;
+  margin-top: 60px;
+ 
+  
+}
+
+#cards{
+  width: 250px;
+  margin: 10px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#home{
+  margin-top: 70px;
+  justify-content: center;
+  align-items: right;
+}
+
+#logincard{
+  border-radius: 15px;
+  margin-top: 70px;
+  position: fixed;
+  
+}
+
+#orders{
+
+  margin: 10px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+#image{
+  width: 180px;
+  height: 150px;
+}
+
+#adminname{
+  width: 150px;
+  border-radius: 20px;
+  margin-top: 90px;
+}
+
+#dashboard-cart{
+  width: 200px;
+}
+
+#filterproducts {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

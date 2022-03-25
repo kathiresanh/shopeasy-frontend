@@ -33,6 +33,7 @@ export default function Cart() {
   let addToOrders = async (values) => {
     try {
       await axios.put(`https://shopeasyend.herokuapp.com/addToOrders/${window.localStorage.getItem("email")}`, values)
+      loadcartdata()
     } catch (error) {
       console.log(error)
     }
